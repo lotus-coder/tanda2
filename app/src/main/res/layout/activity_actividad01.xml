@@ -6,4 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".actividad01">
 
+
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <EditText
+        android:id="@+id/textNombre"
+        android:layout_width="0sp"
+        android:layout_margin="10sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/Apellido"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/textApellido"
+        android:layout_width="0sp"
+        android:layout_margin="10sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Apellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <Button
+        android:id="@+id/verificar"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="verificar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Respuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptas condiciones:"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verificar"
+        />
+
+    <EditText
+        android:id="@+id/textRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/verificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Respuesta"
+
+        />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
