@@ -2,6 +2,7 @@ package com.example.tanda2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,20 +22,22 @@ public class actividad012 extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String nom = extras.getString("Nombre");
         String ape = extras.getString("Apellido");
-        txtNombre.getText().toString();
+        String texto = txtNombre.getText().toString();
+        texto = texto.substring(0,texto.indexOf('_'))+nom+" "+ape+texto.substring(texto.indexOf('_')+1);
+        txtNombre.setText(texto);
         eventos();
     }
     private void  eventos(){
         btnRechazar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent();intent.putExtra("resultado", false);setResult(RESULT_OK, intent);finish();
             }
         });
         btnAceptar.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Intent intent = new Intent();intent.putExtra("resultado", true);setResult(RESULT_OK, intent);finish();
             }
         });
     }
