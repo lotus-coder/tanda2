@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividad02">
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+        android:layout_marginTop="20sp"
+        app:layout_constraintEnd_toStartOf="@id/suma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        />
+
+    <TextView
+        android:id="@+id/suma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@id/num2"
+        app:layout_constraintStart_toEndOf="@id/num1"
+        app:layout_constraintTop_toTopOf="@id/igual" />
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___"
+        app:layout_constraintEnd_toStartOf="@id/igual"
+        app:layout_constraintStart_toEndOf="@id/suma"
+        app:layout_constraintTop_toTopOf="@id/num1"
+         />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMA"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/igual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        app:layout_constraintStart_toEndOf="@id/num2"
+        app:layout_constraintEnd_toStartOf="@id/resultado"
+        app:layout_constraintTop_toTopOf="@id/num2"/>
+
+    <EditText
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/igual"
+        app:layout_constraintTop_toTopOf="@id/igual"
+        app:layout_constraintBottom_toBottomOf="@id/igual"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/comprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <TextView
+        android:id="@+id/textoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREGUNTAS CORRECTAS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comprobar" />
+
+    <TextView
+        android:id="@+id/correctas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginLeft="5sp"
+        app:layout_constraintStart_toEndOf="@id/textoc"
+        app:layout_constraintTop_toBottomOf="@id/comprobar"/>
+
+
+    <TextView
+        android:id="@+id/textoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREGUNTAS INCORRECTAS"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintStart_toEndOf="@id/correctas"
+        app:layout_constraintTop_toBottomOf="@id/comprobar"
+        />
+
+    <TextView
+        android:id="@+id/incorrectas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginLeft="5sp"
+        app:layout_constraintStart_toEndOf="@id/textoi"
+        app:layout_constraintTop_toBottomOf="@id/comprobar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
