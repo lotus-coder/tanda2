@@ -10,10 +10,11 @@
         android:id="@+id/Ver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
         android:text="Enviar"
-        android:layout_marginLeft="40sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chkMarcame4" />
+        app:layout_constraintBottom_toBottomOf="@+id/chkMarcame4"
+        tools:layout_editor_absoluteY="438dp" />
 
     <EditText
         android:id="@+id/Nom"
@@ -68,10 +69,11 @@
         android:layout_height="wrap_content"
         android:text="Aficiones"
         app:layout_constraintBottom_toTopOf="@+id/Ver"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <RadioGroup
+        android:id="@+id/grupo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="157dp"
@@ -101,7 +103,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Introduce tus datos:"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
