@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".actividad04">
 
+    <TextView
+        android:id="@+id/TextoSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:text="Introduce tu edad:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/TextoSimple"
+        app:layout_constraintStart_toEndOf="@+id/TextoSimple"
+        app:layout_constraintTop_toTopOf="@+id/TextoSimple" />
+
+
+    <Button
+        android:id="@+id/Verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Verifica"
+        app:layout_constraintStart_toStartOf="@+id/TextoSimple"
+        app:layout_constraintTop_toBottomOf="@+id/TextoSimple" />
 </androidx.constraintlayout.widget.ConstraintLayout>
